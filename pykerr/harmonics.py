@@ -323,7 +323,7 @@ def spheroidal(theta, spin, l, m, n, s=-2, phi=0., tol=None, maxtol=None,
     out = _npslm(theta, spin, l, m, n, s, phi, tol, maxtol, max_recursion,
                  normalize, use_cache)
     if isinstance(out, numpy.ndarray):
-        out = out.astype(numpy.complex)
+        out = out.astype(complex)
     return out
 
 
